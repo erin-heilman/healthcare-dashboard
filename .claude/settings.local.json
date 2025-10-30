@@ -10,7 +10,9 @@
       "Bash(npm cache clean:*)",
       "Bash(cat:*)",
       "Bash(curl:*)",
-      "Bash(brew install:*)"
+      "Bash(brew install:*)",
+      "Read(//Users/heilman/Desktop/**)",
+      "Bash(pip3 install:*)"
     ],
     "deny": [],
     "ask": []
