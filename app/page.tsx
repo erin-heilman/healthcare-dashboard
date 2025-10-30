@@ -158,31 +158,123 @@ export default function ProfessionalDashboard() {
         {/* Leapfrog Grade Summary */}
         <Card className="border-0" style={{ boxShadow: "0 4px 8px rgba(0,0,0,0.15)", borderRadius: "12px", background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)" }}>
           <CardContent className="p-6">
-            <div className="flex items-center justify-between flex-wrap gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: "#0066CC" }}>
-                  <Award className="w-8 h-8 text-white" />
+            <div className="space-y-6">
+              {/* Current Grade and Stats */}
+              <div className="flex items-center justify-between flex-wrap gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: "#ffc107" }}>
+                    <Award className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-medium text-gray-600 mb-1">Leapfrog Hospital Safety Grade</h3>
+                    <div className="flex items-baseline gap-3">
+                      <span className="text-5xl font-bold" style={{ color: "#ffc107" }}>B</span>
+                      <span className="text-gray-500 text-sm">Spring 2025</span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm font-medium text-gray-600 mb-1">Leapfrog Hospital Safety Grade</h3>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-5xl font-bold" style={{ color: "#0066CC" }}>A</span>
-                    <span className="text-gray-500 text-sm">Spring 2025</span>
+                <div className="flex gap-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-600">18</div>
+                    <div className="text-xs text-gray-600 mt-1">Better than<br/>National</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-gray-600">1</div>
+                    <div className="text-xs text-gray-600 mt-1">Same as<br/>National</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-orange-600">3</div>
+                    <div className="text-xs text-gray-600 mt-1">Below<br/>National</div>
                   </div>
                 </div>
               </div>
-              <div className="flex gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">18</div>
-                  <div className="text-xs text-gray-600 mt-1">Better than<br/>National</div>
+
+              {/* Historical Grade Timeline */}
+              <div className="border-t pt-6">
+                <h4 className="text-sm font-semibold text-gray-700 mb-4">Historical Safety Grade Progression</h4>
+                <div className="flex items-center justify-between gap-2 sm:gap-4">
+                  {/* Spring 2023 - C */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: "#fd7e14" }}>
+                      <span className="text-xl sm:text-2xl font-bold text-white">C</span>
+                    </div>
+                    <div className="text-xs text-center text-gray-600 font-medium">Spring<br/>2023</div>
+                  </div>
+
+                  {/* Arrow */}
+                  <div className="text-gray-400 mb-6">→</div>
+
+                  {/* Fall 2023 - C */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: "#fd7e14" }}>
+                      <span className="text-xl sm:text-2xl font-bold text-white">C</span>
+                    </div>
+                    <div className="text-xs text-center text-gray-600 font-medium">Fall<br/>2023</div>
+                  </div>
+
+                  {/* Arrow with improvement indicator */}
+                  <div className="flex flex-col items-center mb-6">
+                    <ArrowUpIcon className="w-4 h-4 text-green-600" />
+                    <div className="text-xs text-green-600 font-semibold">+1</div>
+                  </div>
+
+                  {/* Spring 2024 - B */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: "#ffc107" }}>
+                      <span className="text-xl sm:text-2xl font-bold text-white">B</span>
+                    </div>
+                    <div className="text-xs text-center text-gray-600 font-medium">Spring<br/>2024</div>
+                  </div>
+
+                  {/* Arrow with decline indicator */}
+                  <div className="flex flex-col items-center mb-6">
+                    <ArrowDownIcon className="w-4 h-4 text-red-600" />
+                    <div className="text-xs text-red-600 font-semibold">-1</div>
+                  </div>
+
+                  {/* Fall 2024 - C */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: "#fd7e14" }}>
+                      <span className="text-xl sm:text-2xl font-bold text-white">C</span>
+                    </div>
+                    <div className="text-xs text-center text-gray-600 font-medium">Fall<br/>2024</div>
+                  </div>
+
+                  {/* Arrow with improvement indicator */}
+                  <div className="flex flex-col items-center mb-6">
+                    <ArrowUpIcon className="w-4 h-4 text-green-600" />
+                    <div className="text-xs text-green-600 font-semibold">+1</div>
+                  </div>
+
+                  {/* Spring 2025 - B (Current) */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="relative">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-2 ring-4 ring-yellow-200" style={{ backgroundColor: "#ffc107" }}>
+                        <span className="text-xl sm:text-2xl font-bold text-white">B</span>
+                      </div>
+                      <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                    </div>
+                    <div className="text-xs text-center font-semibold" style={{ color: "#ffc107" }}>Spring<br/>2025</div>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-600">1</div>
-                  <div className="text-xs text-gray-600 mt-1">Same as<br/>National</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-600">3</div>
-                  <div className="text-xs text-gray-600 mt-1">Below<br/>National</div>
+
+                {/* Grade Statistics */}
+                <div className="mt-6 grid grid-cols-3 gap-4">
+                  <div className="text-center p-3 rounded-lg" style={{ backgroundColor: "#f8fafc" }}>
+                    <div className="text-xs text-gray-600 mb-1">Average Grade</div>
+                    <div className="text-xl font-bold" style={{ color: "#fd7e14" }}>C+</div>
+                  </div>
+                  <div className="text-center p-3 rounded-lg" style={{ backgroundColor: "#f8fafc" }}>
+                    <div className="text-xs text-gray-600 mb-1">Grade History</div>
+                    <div className="text-sm font-semibold text-gray-700">2 B's, 3 C's</div>
+                  </div>
+                  <div className="text-center p-3 rounded-lg" style={{ backgroundColor: "#f8fafc" }}>
+                    <div className="text-xs text-gray-600 mb-1">Current Trend</div>
+                    <div className="flex items-center justify-center gap-1 text-sm font-semibold text-green-600">
+                      <ArrowUpIcon className="w-4 h-4" />
+                      Improving
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,7 +462,7 @@ export default function ProfessionalDashboard() {
                   }}
                   className="w-full"
                 >
-                  <TabsList className="grid w-full grid-cols-2 m-4" style={{ backgroundColor: "#E6F2FF" }}>
+                  <TabsList className="grid w-full grid-cols-2 mx-4 my-4" style={{ backgroundColor: "#E6F2FF" }}>
                     {domains.map((domain) => (
                       <TabsTrigger
                         key={domain}
