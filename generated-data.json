@@ -1,0 +1,1080 @@
+[
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "CPOE",
+    "measureName": "Computerized Physician Order Entry (CPOE)",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 70,
+        "conwayZScore": -1.427,
+        "nationalMean": 91.77
+      },
+      "2023 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.609,
+        "nationalMean": 90.58
+      },
+      "2024 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.571,
+        "nationalMean": 91.81
+      },
+      "2024 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.605,
+        "nationalMean": 74.04
+      },
+      "2025 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.579,
+        "nationalMean": 80.23
+      }
+    },
+    "summary": {
+      "conwayMean": 94,
+      "nationalMean": 85.686,
+      "conwaySlope": 5.993422887561243,
+      "nationalSlope": -3.956840969024305,
+      "weight": 0.062
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 100,
+        "nationalMean": 69.85429985982717
+      },
+      "2027": {
+        "conwayResult": 100,
+        "nationalMean": 61.94061792177865
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "BCMA",
+    "measureName": "Barcode Medication Administration (BCMA)",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 75,
+        "conwayZScore": -1.301,
+        "nationalMean": 91.22
+      },
+      "2023 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.66,
+        "nationalMean": 92.67
+      },
+      "2024 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.628,
+        "nationalMean": 93.42
+      },
+      "2024 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.628,
+        "nationalMean": 80.51
+      },
+      "2025 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.596,
+        "nationalMean": 81.87
+      }
+    },
+    "summary": {
+      "conwayMean": 95,
+      "nationalMean": 87.938,
+      "conwaySlope": 4.9945190729677025,
+      "nationalSlope": -3.080988559930187,
+      "weight": 0.06
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 100,
+        "nationalMean": 75.61066933446023
+      },
+      "2027": {
+        "conwayResult": 100,
+        "nationalMean": 69.44869221459987
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "IPS",
+    "measureName": "ICU Physician Staffing (IPS)",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 5,
+        "conwayZScore": -1.48,
+        "nationalMean": 67.47
+      },
+      "2023 Fall": {
+        "conwayResult": 5,
+        "conwayZScore": -1.294,
+        "nationalMean": 62.31
+      },
+      "2024 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.833,
+        "nationalMean": 63.29
+      },
+      "2024 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.809,
+        "nationalMean": 64.45
+      },
+      "2025 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.797,
+        "nationalMean": 65.15
+      }
+    },
+    "summary": {
+      "conwayMean": 62,
+      "nationalMean": 64.53399999999999,
+      "conwaySlope": 28.463570314473234,
+      "nationalSlope": -0.2501989174009469,
+      "weight": 0.069
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 100,
+        "nationalMean": 63.532930139801806
+      },
+      "2027": {
+        "conwayResult": 100,
+        "nationalMean": 63.03253230499991
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "SP-1",
+    "measureName": "Safe Practice 1: Culture of Leadership Structures and Systems",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 110.77,
+        "conwayZScore": -0.771,
+        "nationalMean": 116.86
+      },
+      "2023 Fall": {
+        "conwayResult": 120,
+        "conwayZScore": 0.39,
+        "nationalMean": 117.49
+      },
+      "2024 Spring": {
+        "conwayResult": 120,
+        "conwayZScore": 0.374,
+        "nationalMean": 117.59
+      },
+      "2024 Fall": {
+        "conwayResult": 120,
+        "conwayZScore": 0.39,
+        "nationalMean": 117.4
+      },
+      "2025 Spring": {
+        "conwayResult": 120,
+        "conwayZScore": 0.37,
+        "nationalMean": 117.49
+      }
+    },
+    "summary": {
+      "conwayMean": 118.154,
+      "nationalMean": 117.36600000000001,
+      "conwaySlope": 1.8439764417396765,
+      "nationalSlope": 0.11686792327480246,
+      "weight": 0.031
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 120,
+        "nationalMean": 117.83359976753569
+      },
+      "2027": {
+        "conwayResult": 120,
+        "nationalMean": 118.0673356140853
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "SP-2",
+    "measureName": "Safe Practice 2: Culture Measurement, Feedback and Intervention",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": -1.052,
+        "nationalMean": 115.87
+      },
+      "2023 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": -1.548,
+        "nationalMean": 116.99
+      },
+      "2024 Spring": {
+        "conwayResult": 120,
+        "conwayZScore": 0.258,
+        "nationalMean": 117.08
+      },
+      "2024 Fall": {
+        "conwayResult": 120,
+        "conwayZScore": 0.223,
+        "nationalMean": 116.6
+      },
+      "2025 Spring": {
+        "conwayResult": 120,
+        "conwayZScore": 0.225,
+        "nationalMean": 116.85
+      }
+    },
+    "summary": {
+      "conwayMean": 112,
+      "nationalMean": 116.678,
+      "conwaySlope": 5.992330592520681,
+      "nationalSlope": 0.15681970667837955,
+      "weight": 0.032
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 120,
+        "nationalMean": 117.30545068392632
+      },
+      "2027": {
+        "conwayResult": 120,
+        "nationalMean": 117.61909009728308
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "Total Nursing Care Hours per Patient Day",
+    "measureName": "Total Nursing Care Hours per Patient Day",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": "Not Included",
+        "conwayZScore": "*",
+        "nationalMean": "*"
+      },
+      "2023 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.911,
+        "nationalMean": 71
+      },
+      "2024 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.826,
+        "nationalMean": 74.69
+      },
+      "2024 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.752,
+        "nationalMean": 76.1
+      },
+      "2025 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.726,
+        "nationalMean": 77.07
+      }
+    },
+    "summary": {
+      "conwayMean": 100,
+      "nationalMean": 74.715,
+      "conwaySlope": 0,
+      "nationalSlope": 1.9604916662547327,
+      "weight": 0.047
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 100,
+        "nationalMean": 81.57672083189158
+      },
+      "2027": {
+        "conwayResult": 100,
+        "nationalMean": 85.49770416440106
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "Hand Hygiene",
+    "measureName": "Hand Hygiene",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 70,
+        "conwayZScore": -0.059,
+        "nationalMean": 71.64
+      },
+      "2023 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.851,
+        "nationalMean": 77.32
+      },
+      "2024 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.818,
+        "nationalMean": 78.65
+      },
+      "2024 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0.753,
+        "nationalMean": 72.43
+      },
+      "2025 Spring": {
+        "conwayResult": 100,
+        "conwayZScore": 0.708,
+        "nationalMean": 74.4
+      }
+    },
+    "summary": {
+      "conwayMean": 94,
+      "nationalMean": 74.88799999999999,
+      "conwaySlope": 5.993422887561243,
+      "nationalSlope": 0.0632318676030701,
+      "weight": 0.049
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 100,
+        "nationalMean": 75.14099676560964
+      },
+      "2027": {
+        "conwayResult": 100,
+        "nationalMean": 75.26746050081579
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "H-COMP-1",
+    "measureName": "H-COMP-1: Nurse Communication",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 89,
+        "conwayZScore": -0.322,
+        "nationalMean": 89.81
+      },
+      "2023 Fall": {
+        "conwayResult": 90,
+        "conwayZScore": 0.175,
+        "nationalMean": 89.55
+      },
+      "2024 Spring": {
+        "conwayResult": 91,
+        "conwayZScore": 0.513,
+        "nationalMean": 89.67
+      },
+      "2024 Fall": {
+        "conwayResult": 90,
+        "conwayZScore": -0.015,
+        "nationalMean": 90.04
+      },
+      "2025 Spring": {
+        "conwayResult": 91,
+        "conwayZScore": 0.322,
+        "nationalMean": 90.19
+      }
+    },
+    "summary": {
+      "conwayMean": 90.2,
+      "nationalMean": 89.852,
+      "conwaySlope": 0.3993430668293039,
+      "nationalSlope": 0.12474664740237273,
+      "weight": 0.03
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 91.79780990355484,
+        "nationalMean": 90.35112329826418
+      },
+      "2027": {
+        "conwayResult": 92.59649603721344,
+        "nationalMean": 90.60061659306893
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "H-COMP-2",
+    "measureName": "H-COMP-2: Doctor Communication",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 90,
+        "conwayZScore": 0.121,
+        "nationalMean": 89.7
+      },
+      "2023 Fall": {
+        "conwayResult": 91,
+        "conwayZScore": 0.612,
+        "nationalMean": 89.45
+      },
+      "2024 Spring": {
+        "conwayResult": 92,
+        "conwayZScore": 0.988,
+        "nationalMean": 89.52
+      },
+      "2024 Fall": {
+        "conwayResult": 91,
+        "conwayZScore": 0.484,
+        "nationalMean": 89.8
+      },
+      "2025 Spring": {
+        "conwayResult": 90,
+        "conwayZScore": 0.036,
+        "nationalMean": 89.91
+      }
+    },
+    "summary": {
+      "conwayMean": 90.8,
+      "nationalMean": 89.676,
+      "conwaySlope": 0.0004369180162246275,
+      "nationalSlope": 0.07682984856301672,
+      "weight": 0.03
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 90.80174815087916,
+        "nationalMean": 89.98340359134639
+      },
+      "2027": {
+        "conwayResult": 90.80262198691162,
+        "nationalMean": 90.1370632884724
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "H-COMP-3",
+    "measureName": "H-COMP-3: Staff Responsiveness",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 81,
+        "conwayZScore": -0.072,
+        "nationalMean": 81.3
+      },
+      "2023 Fall": {
+        "conwayResult": 82,
+        "conwayZScore": 0.237,
+        "nationalMean": 80.97
+      },
+      "2024 Spring": {
+        "conwayResult": 81,
+        "conwayZScore": -0.032,
+        "nationalMean": 81.14
+      },
+      "2024 Fall": {
+        "conwayResult": 82,
+        "conwayZScore": 0.188,
+        "nationalMean": 81.48
+      },
+      "2025 Spring": {
+        "conwayResult": 82,
+        "conwayZScore": 0.086,
+        "nationalMean": 81.63
+      }
+    },
+    "summary": {
+      "conwayMean": 81.6,
+      "nationalMean": 81.304,
+      "conwaySlope": 0.19967153341465196,
+      "nationalSlope": 0.11675760147570573,
+      "weight": 0.03
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 82.39890495177741,
+        "nationalMean": 81.77115835943869
+      },
+      "2027": {
+        "conwayResult": 82.79824801860671,
+        "nationalMean": 82.0046735623901
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "H-COMP-5",
+    "measureName": "H-COMP-5: Communication about Medicines",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 72,
+        "conwayZScore": -0.565,
+        "nationalMean": 74.21
+      },
+      "2023 Fall": {
+        "conwayResult": 75,
+        "conwayZScore": 0.29,
+        "nationalMean": 73.85
+      },
+      "2024 Spring": {
+        "conwayResult": 76,
+        "conwayZScore": 0.459,
+        "nationalMean": 74.09
+      },
+      "2024 Fall": {
+        "conwayResult": 74,
+        "conwayZScore": -0.08,
+        "nationalMean": 74.33
+      },
+      "2025 Spring": {
+        "conwayResult": 74,
+        "conwayZScore": -0.103,
+        "nationalMean": 74.42
+      }
+    },
+    "summary": {
+      "conwayMean": 74.2,
+      "nationalMean": 74.18,
+      "conwaySlope": 0.29994421813820255,
+      "nationalSlope": 0.08981942118537851,
+      "weight": 0.031
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 75.4001055785453,
+        "nationalMean": 74.53937611698392
+      },
+      "2027": {
+        "conwayResult": 75.9999940148217,
+        "nationalMean": 74.71901495935467
+      }
+    }
+  },
+  {
+    "domain": "Process and Structural Measures",
+    "measureId": "H-COMP-6",
+    "measureName": "H-COMP-6: Discharge Information",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 85,
+        "conwayZScore": -0.02,
+        "nationalMean": 85.07
+      },
+      "2023 Fall": {
+        "conwayResult": 86,
+        "conwayZScore": 0.315,
+        "nationalMean": 84.8
+      },
+      "2024 Spring": {
+        "conwayResult": 85,
+        "conwayZScore": 0.026,
+        "nationalMean": 84.9
+      },
+      "2024 Fall": {
+        "conwayResult": 85,
+        "conwayZScore": -0.038,
+        "nationalMean": 85.14
+      },
+      "2025 Spring": {
+        "conwayResult": 85,
+        "conwayZScore": -0.068,
+        "nationalMean": 85.25
+      }
+    },
+    "summary": {
+      "conwayMean": 85.2,
+      "nationalMean": 85.03200000000001,
+      "conwaySlope": -0.09983576670732598,
+      "nationalSlope": 0.06984243718854798,
+      "weight": 0.03
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 84.8005475241113,
+        "nationalMean": 85.31144628841139
+      },
+      "2027": {
+        "conwayResult": 84.60087599069664,
+        "nationalMean": 85.45113116278849
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "Foreign Object Retained After Surgery",
+    "measureName": "Foreign Object Retained After Surgery",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.269,
+        "nationalMean": 0.015
+      },
+      "2023 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0.278,
+        "nationalMean": 0.014
+      },
+      "2024 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.28,
+        "nationalMean": 0.014
+      },
+      "2024 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0.274,
+        "nationalMean": 0.014
+      },
+      "2025 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.275,
+        "nationalMean": 0.014
+      }
+    },
+    "summary": {
+      "conwayMean": 0,
+      "nationalMean": 0.014199999999999999,
+      "conwaySlope": 0,
+      "nationalSlope": -0.0001997807629187079,
+      "weight": 0.042
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0,
+        "nationalMean": 0.013400658010502796
+      },
+      "2027": {
+        "conwayResult": 0,
+        "nationalMean": 0.013001096484665381
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "Air Embolism",
+    "measureName": "Air Embolism",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.062,
+        "nationalMean": 0.001
+      },
+      "2023 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0.073,
+        "nationalMean": 0.001
+      },
+      "2024 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.073,
+        "nationalMean": 0.001
+      },
+      "2024 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0.035,
+        "nationalMean": 0.002
+      },
+      "2025 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.035,
+        "nationalMean": 0.002
+      }
+    },
+    "summary": {
+      "conwayMean": 0,
+      "nationalMean": 0.0014,
+      "conwaySlope": 0,
+      "nationalSlope": 0.0002995073001219779,
+      "weight": 0.024
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0,
+        "nationalMean": 0.0025983574276661203
+      },
+      "2027": {
+        "conwayResult": 0,
+        "nationalMean": 0.003197372027910081
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "Falls and Trauma",
+    "measureName": "Falls and Trauma",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.943,
+        "nationalMean": 0.437
+      },
+      "2023 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 1.003,
+        "nationalMean": 0.429
+      },
+      "2024 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 1.004,
+        "nationalMean": 0.428
+      },
+      "2024 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0.954,
+        "nationalMean": 0.385
+      },
+      "2025 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 0.955,
+        "nationalMean": 0.384
+      }
+    },
+    "summary": {
+      "conwayMean": 0,
+      "nationalMean": 0.4126,
+      "conwaySlope": 0,
+      "nationalSlope": -0.014976129612627285,
+      "weight": 0.049
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0,
+        "nationalMean": 0.3526790693526549
+      },
+      "2027": {
+        "conwayResult": 0,
+        "nationalMean": 0.32272681012740057
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "CLABSI",
+    "measureName": "CLABSI",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0.856,
+        "conwayZScore": 0.252,
+        "nationalMean": 1.077
+      },
+      "2023 Fall": {
+        "conwayResult": 0.597,
+        "conwayZScore": 0.412,
+        "nationalMean": 0.888
+      },
+      "2024 Spring": {
+        "conwayResult": 0.861,
+        "conwayZScore": -0.222,
+        "nationalMean": 0.73
+      },
+      "2024 Fall": {
+        "conwayResult": 1.072,
+        "conwayZScore": -0.681,
+        "nationalMean": 0.687
+      },
+      "2025 Spring": {
+        "conwayResult": 0.5,
+        "conwayZScore": 0.273,
+        "nationalMean": 0.651
+      }
+    },
+    "summary": {
+      "conwayMean": 0.7772,
+      "nationalMean": 0.8065999999999999,
+      "conwaySlope": -0.023535572009475716,
+      "nationalSlope": -0.10515710045642968,
+      "weight": 0.045
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0.6830319195544154,
+        "nationalMean": 0.38585635751624636
+      },
+      "2027": {
+        "conwayResult": 0.6359607755354642,
+        "nationalMean": 0.17554215660338812
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "CAUTI",
+    "measureName": "CAUTI",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 1.193,
+        "nationalMean": 0.862
+      },
+      "2023 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 1.19,
+        "nationalMean": 0.735
+      },
+      "2024 Spring": {
+        "conwayResult": 0.17,
+        "conwayZScore": 0.86,
+        "nationalMean": 0.627
+      },
+      "2024 Fall": {
+        "conwayResult": 0.604,
+        "conwayZScore": -0.054,
+        "nationalMean": 0.577
+      },
+      "2025 Spring": {
+        "conwayResult": 0.29,
+        "conwayZScore": 0.506,
+        "nationalMean": 0.54
+      }
+    },
+    "summary": {
+      "conwayMean": 0.21280000000000002,
+      "nationalMean": 0.6682,
+      "conwaySlope": 0.11829271292571075,
+      "nationalSlope": -0.08008587084942846,
+      "weight": 0.047
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0.6861004875526255,
+        "nationalMean": 0.34776875126436835
+      },
+      "2027": {
+        "conwayResult": 0.9226859134040453,
+        "nationalMean": 0.18759700956551129
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "SSI: Colon",
+    "measureName": "SSI: Colon",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0,
+        "conwayZScore": 1.216,
+        "nationalMean": 0.822
+      },
+      "2023 Fall": {
+        "conwayResult": 0.452,
+        "conwayZScore": 0.578,
+        "nationalMean": 0.832
+      },
+      "2024 Spring": {
+        "conwayResult": 0.775,
+        "conwayZScore": 0.103,
+        "nationalMean": 0.845
+      },
+      "2024 Fall": {
+        "conwayResult": 0.386,
+        "conwayZScore": 0.646,
+        "nationalMean": 0.852
+      },
+      "2025 Spring": {
+        "conwayResult": 0.843,
+        "conwayZScore": -0.017,
+        "nationalMean": 0.831
+      }
+    },
+    "summary": {
+      "conwayMean": 0.49119999999999997,
+      "nationalMean": 0.8363999999999999,
+      "conwaySlope": 0.16171875916480424,
+      "nationalSlope": 0.0038008590526420398,
+      "weight": 0.034
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 1.1382522626966605,
+        "nationalMean": 0.8516076015355573
+      },
+      "2027": {
+        "conwayResult": 1.4616897810262657,
+        "nationalMean": 0.8592093196408412
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "MRSA",
+    "measureName": "MRSA",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 1.449,
+        "conwayZScore": -0.439,
+        "nationalMean": 1.095
+      },
+      "2023 Fall": {
+        "conwayResult": 1.372,
+        "conwayZScore": -0.612,
+        "nationalMean": 0.927
+      },
+      "2024 Spring": {
+        "conwayResult": 1.57,
+        "conwayZScore": -1.279,
+        "nationalMean": 0.793
+      },
+      "2024 Fall": {
+        "conwayResult": 1.385,
+        "conwayZScore": -1.088,
+        "nationalMean": 0.746
+      },
+      "2025 Spring": {
+        "conwayResult": 0.96,
+        "conwayZScore": -0.407,
+        "nationalMean": 0.719
+      }
+    },
+    "summary": {
+      "conwayMean": 1.3472,
+      "nationalMean": 0.8560000000000001,
+      "conwaySlope": -0.09623545302413106,
+      "nationalSlope": -0.09317385925494107,
+      "weight": 0.045
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0.9621527243933166,
+        "nationalMean": 0.4832024546413294
+      },
+      "2027": {
+        "conwayResult": 0.7696818183450524,
+        "nationalMean": 0.2968547361314471
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "C. diff",
+    "measureName": "C. diff",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 0.282,
+        "conwayZScore": 0.554,
+        "nationalMean": 0.489
+      },
+      "2023 Fall": {
+        "conwayResult": 0.101,
+        "conwayZScore": 1.053,
+        "nationalMean": 0.488
+      },
+      "2024 Spring": {
+        "conwayResult": 0.171,
+        "conwayZScore": 0.806,
+        "nationalMean": 0.455
+      },
+      "2024 Fall": {
+        "conwayResult": 0.423,
+        "conwayZScore": -0.016,
+        "nationalMean": 0.418
+      },
+      "2025 Spring": {
+        "conwayResult": 0.339,
+        "conwayZScore": 0.189,
+        "nationalMean": 0.401
+      }
+    },
+    "summary": {
+      "conwayMean": 0.2632,
+      "nationalMean": 0.4502,
+      "conwaySlope": 0.04353462036612533,
+      "nationalSlope": -0.02455959861000218,
+      "weight": 0.045
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 0.43738619063750406,
+        "nationalMean": 0.35193469093137786
+      },
+      "2027": {
+        "conwayResult": 0.5244554313697556,
+        "nationalMean": 0.30281549371137295
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "PSI 4",
+    "measureName": "PSI 4: Death rate among surgical inpatients with serious treatable conditions",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": "Not Included",
+        "conwayZScore": "*",
+        "nationalMean": 143.23
+      },
+      "2023 Fall": {
+        "conwayResult": "Not Included",
+        "conwayZScore": "*",
+        "nationalMean": 143.25
+      },
+      "2024 Spring": {
+        "conwayResult": 186.37,
+        "conwayZScore": -0.821,
+        "nationalMean": 168.38
+      },
+      "2024 Fall": {
+        "conwayResult": 186.37,
+        "conwayZScore": -0.825,
+        "nationalMean": 168.34
+      },
+      "2025 Spring": {
+        "conwayResult": 207.55,
+        "conwayZScore": -1.253,
+        "nationalMean": 177.45
+      }
+    },
+    "summary": {
+      "conwayMean": 193.42999999999998,
+      "nationalMean": 160.13000000000002,
+      "conwaySlope": 10.580302294858841,
+      "nationalSlope": 9.338396220599305,
+      "weight": 0.02
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 225.16124450805182,
+        "nationalMean": 197.49381874126902
+      },
+      "2027": {
+        "conwayResult": 246.32184909776925,
+        "nationalMean": 216.17061118246738
+      }
+    }
+  },
+  {
+    "domain": "Outcome Measures",
+    "measureId": "PSI-90",
+    "measureName": "CMS Medicare PSI-90: Patient safety and adverse events composite",
+    "periods": {
+      "2023 Spring": {
+        "conwayResult": 1.31,
+        "conwayZScore": -1.938,
+        "nationalMean": 0.98
+      },
+      "2023 Fall": {
+        "conwayResult": 1.31,
+        "conwayZScore": -1.928,
+        "nationalMean": 0.98
+      },
+      "2024 Spring": {
+        "conwayResult": 1.32,
+        "conwayZScore": -1.667,
+        "nationalMean": 1.01
+      },
+      "2024 Fall": {
+        "conwayResult": 1.32,
+        "conwayZScore": -1.661,
+        "nationalMean": 1.01
+      },
+      "2025 Spring": {
+        "conwayResult": 1.26,
+        "conwayZScore": -1.316,
+        "nationalMean": 1
+      }
+    },
+    "summary": {
+      "conwayMean": 1.304,
+      "nationalMean": 0.9959999999999999,
+      "conwaySlope": -0.008971019168132047,
+      "nationalSlope": 0.006993965144715631,
+      "weight": 0.15
+    },
+    "forecasts": {
+      "2026": {
+        "conwayResult": 1.2681060920735887,
+        "nationalMean": 1.023983525198199
+      },
+      "2027": {
+        "conwayResult": 1.2501640537373246,
+        "nationalMean": 1.03797145548763
+      }
+    }
+  }
+]
