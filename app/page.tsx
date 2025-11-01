@@ -90,13 +90,25 @@ export default function ProfessionalDashboard() {
   }, [])
 
   // Filter out summary row and format data for chart
-  const chartData = currentPerformanceData
-    .filter((item) => !item.year.includes("2023-2025"))
+  const historicalData = currentPerformanceData
+    .filter((item) => !item.year.includes("2023-2025") && item.status !== "forecast")
     .map((item) => ({
       period: item.year,
       Conway: item.conway,
       National: item.national,
+      isForecast: false,
     }))
+
+  const forecastData = currentPerformanceData
+    .filter((item) => item.status === "forecast")
+    .map((item) => ({
+      period: item.year,
+      Conway: item.conway,
+      National: item.national,
+      isForecast: true,
+    }))
+
+  const chartData = [...historicalData, ...forecastData]
 
   // Get trend info
   const summaryData = currentPerformanceData.find((item) =>
@@ -462,12 +474,13 @@ export default function ProfessionalDashboard() {
                   }}
                   className="w-full"
                 >
-                  <TabsList className="grid w-full grid-cols-2 mx-4 my-4" style={{ backgroundColor: "#E6F2FF" }}>
+                  <TabsList className="flex w-full mx-4 my-4" style={{ backgroundColor: "#E6F2FF", maxWidth: "calc(100% - 2rem)", boxSizing: "border-box", overflow: "hidden" }}>
                     {domains.map((domain) => (
                       <TabsTrigger
                         key={domain}
                         value={domain}
-                        className="data-[state=active]:bg-white data-[state=active]:text-[#0066CC] data-[state=active]:font-semibold text-xs sm:text-sm"
+                        className="data-[state=active]:bg-white data-[state=active]:text-[#0066CC] data-[state=active]:font-semibold text-xs sm:text-sm flex-1"
+                        style={{ boxSizing: "border-box" }}
                       >
                         {domain === "Process and Structural Measures" ? "Process" : "Outcome"}
                       </TabsTrigger>
@@ -493,17 +506,10 @@ export default function ProfessionalDashboard() {
                               } ${idx % 2 === 0 ? "bg-gray-50 bg-opacity-50" : ""}`}
                               onClick={() => setSelectedMeasure(measure.id)}
                             >
-                              <div className="flex items-start justify-between gap-2 mb-2">
-                                <h4 className="text-sm font-medium text-gray-900 leading-tight flex-1">
+                              <div className="mb-2">
+                                <h4 className="text-sm font-medium text-gray-900 leading-tight">
                                   {measure.name}
                                 </h4>
-                                {measureImproving ? (
-                                  <ArrowUpIcon className="w-4 h-4 flex-shrink-0 text-green-600" />
-                                ) : config && ((config.favorableTrend === "Higher" && measureTrend < -0.01) || (config.favorableTrend === "Lower" && measureTrend > 0.01)) ? (
-                                  <ArrowDownIcon className="w-4 h-4 flex-shrink-0 text-red-600" />
-                                ) : (
-                                  <div className="w-4 h-4 flex-shrink-0"></div>
-                                )}
                               </div>
                               <div className="flex items-center gap-2 flex-wrap">
                                 <Badge
@@ -600,6 +606,28 @@ export default function ProfessionalDashboard() {
                     <div className="text-xs text-gray-500 mt-1">2023-2025</div>
                   </div>
                 </div>
+
+                {/* Overall Averages (2023-2025) */}
+                <div className="p-4 rounded-lg border-2 border-dashed" style={{ borderColor: "#E5E7EB", backgroundColor: "#FAFAFA" }}>
+                  <div className="text-center">
+                    <div className="text-xs font-semibold text-gray-600 mb-2">Overall Averages (2023-2025)</div>
+                    <div className="flex justify-center gap-6">
+                      <div>
+                        <span className="text-sm font-semibold" style={{ color: "#0066CC" }}>Conway Avg: </span>
+                        <span className="text-sm font-bold" style={{ color: "#0066CC" }}>
+                          {summaryData?.conwayMean?.toFixed(1) || "N/A"}
+                        </span>
+                      </div>
+                      <div className="border-l border-gray-300"></div>
+                      <div>
+                        <span className="text-sm font-semibold" style={{ color: "#14B8A6" }}>National Avg: </span>
+                        <span className="text-sm font-bold" style={{ color: "#14B8A6" }}>
+                          {summaryData?.nationalMean?.toFixed(1) || "N/A"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -608,7 +636,7 @@ export default function ProfessionalDashboard() {
               <Card className="border-0" style={{ boxShadow: "0 2px 4px rgba(0,0,0,0.1)", borderRadius: "8px" }}>
                 <CardHeader className="border-b" style={{ backgroundColor: "#F8FAFC" }}>
                   <CardTitle className="text-lg font-semibold" style={{ color: "#0066CC" }}>
-                    Performance Trend Analysis
+                    Performance Trend Analysis (2023-2027 with Forecasts)
                   </CardTitle>
                   <div className="flex gap-6 mt-3 flex-wrap">
                     <div className="flex items-center gap-2">
@@ -624,6 +652,10 @@ export default function ProfessionalDashboard() {
                       <span className="text-xs text-gray-500">
                         (Slope: {nationalTrend >= 0 ? "+" : ""}{nationalTrend.toFixed(3)})
                       </span>
+                    </div>
+                    <div className="flex items-center gap-2 ml-auto">
+                      <div className="w-8 h-0.5 border-t-2 border-dashed" style={{ borderColor: "#9CA3AF" }}></div>
+                      <span className="text-xs text-gray-600 italic">= Forecasted Data</span>
                     </div>
                   </div>
                 </CardHeader>
@@ -651,6 +683,10 @@ export default function ProfessionalDashboard() {
                           boxShadow: "0 4px 6px rgba(0,0,0,0.1)"
                         }}
                         labelStyle={{ color: "#374151", fontWeight: "600" }}
+                        formatter={(value: any, name: any, props: any) => {
+                          const isForecast = props.payload.isForecast
+                          return [value, isForecast ? `${name} (Forecast)` : name]
+                        }}
                       />
                       <Legend
                         wrapperStyle={{ paddingTop: "20px" }}
@@ -662,7 +698,21 @@ export default function ProfessionalDashboard() {
                         name="Conway Regional"
                         stroke="#0066CC"
                         strokeWidth={3}
-                        dot={{ r: 5, fill: "#0066CC", strokeWidth: 2, stroke: "white" }}
+                        dot={(props: any) => {
+                          const { cx, cy, payload } = props
+                          if (!cx || !cy) return null
+                          return (
+                            <circle
+                              cx={cx}
+                              cy={cy}
+                              r={5}
+                              fill={payload?.isForecast ? "#FFFFFF" : "#0066CC"}
+                              stroke="#0066CC"
+                              strokeWidth={2}
+                              opacity={payload?.isForecast ? 0.6 : 1}
+                            />
+                          )
+                        }}
                         activeDot={{ r: 7 }}
                       />
                       <Line
@@ -671,9 +721,23 @@ export default function ProfessionalDashboard() {
                         name="National Benchmark"
                         stroke="#14B8A6"
                         strokeWidth={3}
-                        dot={{ r: 5, fill: "#14B8A6", strokeWidth: 2, stroke: "white" }}
-                        activeDot={{ r: 7 }}
                         strokeDasharray="5 5"
+                        dot={(props: any) => {
+                          const { cx, cy, payload } = props
+                          if (!cx || !cy) return null
+                          return (
+                            <circle
+                              cx={cx}
+                              cy={cy}
+                              r={5}
+                              fill={payload?.isForecast ? "#FFFFFF" : "#14B8A6"}
+                              stroke="#14B8A6"
+                              strokeWidth={2}
+                              opacity={payload?.isForecast ? 0.6 : 1}
+                            />
+                          )
+                        }}
+                        activeDot={{ r: 7 }}
                       />
                     </LineChart>
                   </ResponsiveContainer>

@@ -487,6 +487,18 @@ const performanceData = {
       status: "worse",
     },
     {
+      year: "2026 Spring",
+      conway: 100.00,
+      national: 69.85,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 100.00,
+      national: 61.94,
+      status: "forecast",
+    },
+    {
       year: "2023-2025",
       conwayMean: 94,
       nationalMean: 85.686,
@@ -527,6 +539,18 @@ const performanceData = {
       status: "worse",
     },
     {
+      year: "2026 Spring",
+      conway: 100.00,
+      national: 75.61,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 100.00,
+      national: 69.45,
+      status: "forecast",
+    },
+    {
       year: "2023-2025",
       conwayMean: 95,
       nationalMean: 87.938,
@@ -565,6 +589,18 @@ const performanceData = {
       conway: 100,
       national: 65.15,
       status: "worse",
+    },
+    {
+      year: "2026 Spring",
+      conway: 100.00,
+      national: 63.53,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 100.00,
+      national: 63.03,
+      status: "forecast",
     },
     {
       year: "2023-2025",
@@ -1087,6 +1123,18 @@ const performanceData = {
       status: "better",
     },
     {
+      year: "2026 Spring",
+      conway: 0.68,
+      national: 0.39,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 0.64,
+      national: 0.18,
+      status: "forecast",
+    },
+    {
       year: "2023-2025",
       conwayMean: 0.7772,
       nationalMean: 0.8065999999999999,
@@ -1125,6 +1173,18 @@ const performanceData = {
       conway: 0.29,
       national: 0.54,
       status: "better",
+    },
+    {
+      year: "2026 Spring",
+      conway: 0.69,
+      national: 0.35,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 0.92,
+      national: 0.19,
+      status: "forecast",
     },
     {
       year: "2023-2025",
@@ -1205,6 +1265,18 @@ const performanceData = {
       conway: 0.96,
       national: 0.719,
       status: "worse",
+    },
+    {
+      year: "2026 Spring",
+      conway: 0.96,
+      national: 0.48,
+      status: "forecast",
+    },
+    {
+      year: "2027 Spring",
+      conway: 0.77,
+      national: 0.30,
+      status: "forecast",
     },
     {
       year: "2023-2025",
