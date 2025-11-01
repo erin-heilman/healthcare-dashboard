@@ -96,7 +96,6 @@ export default function ProfessionalDashboard() {
       period: item.year,
       Conway: item.conway,
       National: item.national,
-      isForecast: false,
     }))
 
   const forecastData = currentPerformanceData
@@ -105,8 +104,12 @@ export default function ProfessionalDashboard() {
       period: item.year,
       Conway: item.conway,
       National: item.national,
-      isForecast: true,
     }))
+
+  // For forecast lines, include the last historical point for continuity
+  const lastHistorical = historicalData[historicalData.length - 1]
+  const conwayForecastData = lastHistorical ? [lastHistorical, ...forecastData] : forecastData
+  const nationalForecastData = lastHistorical ? [lastHistorical, ...forecastData] : forecastData
 
   const chartData = [...historicalData, ...forecastData]
 
@@ -638,24 +641,29 @@ export default function ProfessionalDashboard() {
                   <CardTitle className="text-lg font-semibold" style={{ color: "#0066CC" }}>
                     Performance Trend Analysis (2023-2027 with Forecasts)
                   </CardTitle>
-                  <div className="flex gap-6 mt-3 flex-wrap">
+                  <div className="flex gap-6 mt-3 flex-wrap items-center">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#0066CC" }}></div>
+                      <div className="flex items-center gap-1">
+                        <div className="w-6 h-0.5" style={{ backgroundColor: "#0066CC" }}></div>
+                        <div className="w-6 h-0.5 border-t-2 border-dashed" style={{ borderColor: "#0066CC" }}></div>
+                      </div>
                       <span className="text-sm text-gray-700 font-medium">Conway Regional</span>
                       <span className="text-xs text-gray-500">
                         (Slope: {conwayTrend >= 0 ? "+" : ""}{conwayTrend.toFixed(3)})
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#14B8A6" }}></div>
+                      <div className="flex items-center gap-1">
+                        <div className="w-6 h-0.5" style={{ backgroundColor: "#14B8A6" }}></div>
+                        <div className="w-6 h-0.5 border-t-2 border-dashed" style={{ borderColor: "#14B8A6" }}></div>
+                      </div>
                       <span className="text-sm text-gray-700 font-medium">National Benchmark</span>
                       <span className="text-xs text-gray-500">
                         (Slope: {nationalTrend >= 0 ? "+" : ""}{nationalTrend.toFixed(3)})
                       </span>
                     </div>
-                    <div className="flex items-center gap-2 ml-auto">
-                      <div className="w-8 h-0.5 border-t-2 border-dashed" style={{ borderColor: "#9CA3AF" }}></div>
-                      <span className="text-xs text-gray-600 italic">= Forecasted Data</span>
+                    <div className="flex items-center gap-2 ml-auto text-xs text-gray-600">
+                      <span className="font-medium">Solid</span> = Actual | <span className="font-medium">Dashed</span> = Forecast
                     </div>
                   </div>
                 </CardHeader>
@@ -683,61 +691,67 @@ export default function ProfessionalDashboard() {
                           boxShadow: "0 4px 6px rgba(0,0,0,0.1)"
                         }}
                         labelStyle={{ color: "#374151", fontWeight: "600" }}
-                        formatter={(value: any, name: any, props: any) => {
-                          const isForecast = props.payload.isForecast
-                          return [value, isForecast ? `${name} (Forecast)` : name]
-                        }}
                       />
                       <Legend
                         wrapperStyle={{ paddingTop: "20px" }}
-                        iconType="circle"
+                        iconType="line"
+                        formatter={(value: string) => {
+                          if (value === "Conway Historical") return "Conway (Actual)"
+                          if (value === "Conway Forecast") return "Conway (Forecast)"
+                          if (value === "National Historical") return "National (Actual)"
+                          if (value === "National Forecast") return "National (Forecast)"
+                          return value
+                        }}
                       />
+                      {/* Conway Historical - Solid Line */}
                       <Line
                         type="monotone"
+                        data={historicalData}
                         dataKey="Conway"
-                        name="Conway Regional"
+                        name="Conway Historical"
                         stroke="#0066CC"
                         strokeWidth={3}
-                        dot={(props: any) => {
-                          const { cx, cy, payload } = props
-                          if (!cx || !cy) return null
-                          return (
-                            <circle
-                              cx={cx}
-                              cy={cy}
-                              r={5}
-                              fill={payload?.isForecast ? "#FFFFFF" : "#0066CC"}
-                              stroke="#0066CC"
-                              strokeWidth={2}
-                              opacity={payload?.isForecast ? 0.6 : 1}
-                            />
-                          )
-                        }}
+                        dot={{ r: 5, fill: "#0066CC", strokeWidth: 2, stroke: "white" }}
                         activeDot={{ r: 7 }}
+                        connectNulls
                       />
+                      {/* Conway Forecast - Dashed Line */}
                       <Line
                         type="monotone"
+                        data={conwayForecastData}
+                        dataKey="Conway"
+                        name="Conway Forecast"
+                        stroke="#0066CC"
+                        strokeWidth={3}
+                        strokeDasharray="8 4"
+                        dot={{ r: 5, fill: "white", stroke: "#0066CC", strokeWidth: 2 }}
+                        activeDot={{ r: 7 }}
+                        connectNulls
+                      />
+                      {/* National Historical - Solid Line */}
+                      <Line
+                        type="monotone"
+                        data={historicalData}
                         dataKey="National"
-                        name="National Benchmark"
+                        name="National Historical"
                         stroke="#14B8A6"
                         strokeWidth={3}
-                        strokeDasharray="5 5"
-                        dot={(props: any) => {
-                          const { cx, cy, payload } = props
-                          if (!cx || !cy) return null
-                          return (
-                            <circle
-                              cx={cx}
-                              cy={cy}
-                              r={5}
-                              fill={payload?.isForecast ? "#FFFFFF" : "#14B8A6"}
-                              stroke="#14B8A6"
-                              strokeWidth={2}
-                              opacity={payload?.isForecast ? 0.6 : 1}
-                            />
-                          )
-                        }}
+                        dot={{ r: 5, fill: "#14B8A6", strokeWidth: 2, stroke: "white" }}
                         activeDot={{ r: 7 }}
+                        connectNulls
+                      />
+                      {/* National Forecast - Dashed Line */}
+                      <Line
+                        type="monotone"
+                        data={nationalForecastData}
+                        dataKey="National"
+                        name="National Forecast"
+                        stroke="#14B8A6"
+                        strokeWidth={3}
+                        strokeDasharray="8 4"
+                        dot={{ r: 5, fill: "white", stroke: "#14B8A6", strokeWidth: 2 }}
+                        activeDot={{ r: 7 }}
+                        connectNulls
                       />
                     </LineChart>
                   </ResponsiveContainer>
