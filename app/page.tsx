@@ -89,29 +89,32 @@ export default function ProfessionalDashboard() {
     }
   }, [])
 
-  // Filter out summary row and format data for chart
-  const historicalData = currentPerformanceData
-    .filter((item) => !item.year.includes("2023-2025") && item.status !== "forecast")
+  // Filter out summary row and format data for chart with continuous values
+  const allDataPoints = currentPerformanceData
+    .filter((item) => !item.year.includes("2023-2025"))
     .map((item) => ({
       period: item.year,
-      Conway: item.conway,
-      National: item.national,
+      conwayActual: item.status !== "forecast" ? item.conway : null,
+      nationalActual: item.status !== "forecast" ? item.national : null,
+      conwayForecast: item.status === "forecast" ? item.conway : null,
+      nationalForecast: item.status === "forecast" ? item.national : null,
+      isForecast: item.status === "forecast",
     }))
 
-  const forecastData = currentPerformanceData
-    .filter((item) => item.status === "forecast")
-    .map((item) => ({
-      period: item.year,
-      Conway: item.conway,
-      National: item.national,
-    }))
+  // Add connecting point for forecast lines (last historical point)
+  const lastHistoricalIndex = allDataPoints.findIndex(p => p.isForecast)
+  if (lastHistoricalIndex > 0) {
+    const lastHistorical = allDataPoints[lastHistoricalIndex - 1]
+    // Add the connection point to forecast values
+    allDataPoints.forEach((point, idx) => {
+      if (idx === lastHistoricalIndex && lastHistorical) {
+        point.conwayForecast = lastHistorical.conwayActual
+        point.nationalForecast = lastHistorical.nationalActual
+      }
+    })
+  }
 
-  // For forecast lines, include the last historical point for continuity
-  const lastHistorical = historicalData[historicalData.length - 1]
-  const conwayForecastData = lastHistorical ? [lastHistorical, ...forecastData] : forecastData
-  const nationalForecastData = lastHistorical ? [lastHistorical, ...forecastData] : forecastData
-
-  const chartData = [...historicalData, ...forecastData]
+  const chartData = allDataPoints
 
   // Get trend info
   const summaryData = currentPerformanceData.find((item) =>
@@ -720,52 +723,48 @@ export default function ProfessionalDashboard() {
                       {/* Conway Historical - Solid Line */}
                       <Line
                         type="monotone"
-                        data={historicalData}
-                        dataKey="Conway"
+                        dataKey="conwayActual"
                         name="Conway Historical"
                         stroke="#0066CC"
                         strokeWidth={3}
                         dot={{ r: 5, fill: "#0066CC", strokeWidth: 2, stroke: "white" }}
                         activeDot={{ r: 7 }}
-                        connectNulls
+                        connectNulls={false}
                       />
                       {/* Conway Forecast - Dashed Line */}
                       <Line
                         type="monotone"
-                        data={conwayForecastData}
-                        dataKey="Conway"
+                        dataKey="conwayForecast"
                         name="Conway Forecast"
                         stroke="#0066CC"
                         strokeWidth={3}
                         strokeDasharray="8 4"
                         dot={{ r: 5, fill: "white", stroke: "#0066CC", strokeWidth: 2 }}
                         activeDot={{ r: 7 }}
-                        connectNulls
+                        connectNulls={false}
                       />
                       {/* National Historical - Solid Line */}
                       <Line
                         type="monotone"
-                        data={historicalData}
-                        dataKey="National"
+                        dataKey="nationalActual"
                         name="National Historical"
                         stroke="#14B8A6"
                         strokeWidth={3}
                         dot={{ r: 5, fill: "#14B8A6", strokeWidth: 2, stroke: "white" }}
                         activeDot={{ r: 7 }}
-                        connectNulls
+                        connectNulls={false}
                       />
                       {/* National Forecast - Dashed Line */}
                       <Line
                         type="monotone"
-                        data={nationalForecastData}
-                        dataKey="National"
+                        dataKey="nationalForecast"
                         name="National Forecast"
                         stroke="#14B8A6"
                         strokeWidth={3}
                         strokeDasharray="8 4"
                         dot={{ r: 5, fill: "white", stroke: "#14B8A6", strokeWidth: 2 }}
                         activeDot={{ r: 7 }}
-                        connectNulls
+                        connectNulls={false}
                       />
                     </LineChart>
                   </ResponsiveContainer>
