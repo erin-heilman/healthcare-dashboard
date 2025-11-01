@@ -1,22 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3:*)",
-      "Bash(npx tsc:*)",
-      "Bash(npm run dev)",
-      "Bash(npm install)",
-      "Bash(npm install:*)",
-      "Bash(sudo chown:*)",
-      "Bash(npm cache clean:*)",
-      "Bash(cat:*)",
-      "Bash(curl:*)",
-      "Bash(brew install:*)",
-      "Read(//Users/heilman/Desktop/**)",
-      "Bash(pip3 install:*)",
-      "Bash(npm run build:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(vercel --prod:*)",
+      "Bash(vercel ls:*)",
+      "Bash(vercel domains:*)"
     ],
     "deny": [],
     "ask": []

@@ -133,6 +133,9 @@ export default function ProfessionalDashboard() {
   // Determine if trend is improving based on favorable direction
   const isCurrentMeasureImproving = isImproving(selectedMeasure, conwayTrend)
 
+  // Check if this is an inverse measure (lower is better)
+  const isInverseMeasure = config?.favorableTrend === "Lower"
+
   return (
     <div className="min-h-screen" style={{ background: "linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%)" }}>
       {/* Professional Header */}
@@ -561,8 +564,14 @@ export default function ProfessionalDashboard() {
                       Measure ID: {selectedMeasure} • Weight: {((currentMeasures.find((m) => m.id === selectedMeasure)?.weight || 0) * 100).toFixed(1)}%
                     </p>
                     {config && (
-                      <p className="text-xs text-gray-500 mt-1">
-                        Favorable Trend: {config.favorableTrend === "Higher" ? "↑ Higher is Better" : "↓ Lower is Better"}
+                      <p className="text-xs font-semibold mt-1" style={{
+                        color: config.favorableTrend === "Lower" ? "#F97316" : "#0066CC",
+                        backgroundColor: config.favorableTrend === "Lower" ? "#FFF7ED" : "#EFF6FF",
+                        padding: "4px 8px",
+                        borderRadius: "4px",
+                        display: "inline-block"
+                      }}>
+                        {config.favorableTrend === "Higher" ? "↑ Higher is Better" : "↓ Lower is Better (Inverse Measure)"}
                       </p>
                     )}
                   </div>
@@ -596,7 +605,12 @@ export default function ProfessionalDashboard() {
                         ? "text-red-600"
                         : "text-gray-600"
                     }`}>
-                      {isCurrentMeasureImproving ? <ArrowUpIcon className="w-5 h-5" /> : <ArrowDownIcon className="w-5 h-5" />}
+                      {/* For inverse measures, show down arrow when improving (value decreasing) */}
+                      {isInverseMeasure ? (
+                        conwayTrend < 0 ? <ArrowDownIcon className="w-5 h-5" /> : <ArrowUpIcon className="w-5 h-5" />
+                      ) : (
+                        conwayTrend > 0 ? <ArrowUpIcon className="w-5 h-5" /> : <ArrowDownIcon className="w-5 h-5" />
+                      )}
                       {Math.abs(percentChange).toFixed(1)}%
                     </div>
                     <div className="text-xs text-gray-500 mt-1">vs Previous</div>
