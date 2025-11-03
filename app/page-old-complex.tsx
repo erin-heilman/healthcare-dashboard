@@ -2192,7 +2192,7 @@ export default function HealthAnalyticsDashboard() {
           <div className="flex flex-col items-center text-center gap-4">
             <img src="/medisolv-logo.png" alt="Medisolv Logo" className="h-12" />
             <div>
-              <h1 className="text-2xl font-bold text-primary">Conway Regional Medical Center Star Ratings Dashboard</h1>
+              <h1 className="text-2xl font-bold text-primary">Conway Medical Center Star Ratings Dashboard</h1>
               <p className="text-gray-600 mt-1">Historical analysis of Conway's Star Ratings (2019-2025)</p>
             </div>
           </div>

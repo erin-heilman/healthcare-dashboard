@@ -156,7 +156,7 @@ export default function ProfessionalDashboard() {
           <div className="flex items-start justify-between flex-wrap gap-4">
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2" style={{ fontFamily: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-                Conway Regional Medical Center
+                Conway Medical Center
               </h1>
               <h2 className="text-lg sm:text-xl text-blue-100 font-medium mb-1">
                 Leapfrog Performance Dashboard

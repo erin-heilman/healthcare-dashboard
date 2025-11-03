@@ -3,7 +3,10 @@
     "allow": [
       "Bash(vercel --prod:*)",
       "Bash(vercel ls:*)",
-      "Bash(vercel domains:*)"
+      "Bash(vercel domains:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
