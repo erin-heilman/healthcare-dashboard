@@ -1,5 +1,6 @@
 // Performance configuration based on Conway Medical Center Leapfrog Historical Measure Analysis
-// Extracted from official documentation
+// Updated for Fall 2025 data
+// Auto-generated from Word document and generated-data.json
 
 export type FavorableTrend = "Higher" | "Lower"
 export type OverallPerformance = "Better" | "Worse" | "Same"
@@ -15,51 +16,105 @@ export interface MeasurePerformanceConfig {
 }
 
 export const performanceConfig: Record<string, MeasurePerformanceConfig> = {
-  // Process and Structural Measures (all have "Higher" favorable trend)
-  "CPOE": {
-    id: "CPOE",
-    name: "Computerized Physician Order Entry (CPOE)",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 94,
-    averageNational: 85.69,
-    trendSlope: 5.99
-  },
+  // Process and Structural Measures
   "BCMA": {
     id: "BCMA",
     name: "Barcode Medication Administration (BCMA)",
     favorableTrend: "Higher",
     overallPerformance: "Better",
+    averageConway: 95.83333333333333,
+    averageNational: 87.48166666666667,
+    trendSlope: 3.567980416065942
+  },
+  "CPOE": {
+    id: "CPOE",
+    name: "Computerized Physician Order Entry (CPOE)",
+    favorableTrend: "Higher",
+    overallPerformance: "Better",
     averageConway: 95,
-    averageNational: 87.94,
-    trendSlope: 4.99
+    averageNational: 85.10833333333333,
+    trendSlope: 4.281576499279131
+  },
+  "H-COMP-1": {
+    id: "H-COMP-1",
+    name: "H-COMP-1: Nurse Communication",
+    favorableTrend: "Higher",
+    overallPerformance: "Better",
+    averageConway: 90.33333333333333,
+    averageNational: 89.93833333333335,
+    trendSlope: 0.3423596228613037
+  },
+  "H-COMP-2": {
+    id: "H-COMP-2",
+    name: "H-COMP-2: Doctor Communication",
+    favorableTrend: "Higher",
+    overallPerformance: "Better",
+    averageConway: 91,
+    averageNational: 89.72833333333334,
+    trendSlope: 0.17138793278193531
+  },
+  "H-COMP-3": {
+    id: "H-COMP-3",
+    name: "H-COMP-3: Staff Responsiveness",
+    favorableTrend: "Higher",
+    overallPerformance: "Same",
+    averageConway: 81.5,
+    averageNational: 81.38833333333334,
+    trendSlope: 0.028564655463655886
+  },
+  "H-COMP-5": {
+    id: "H-COMP-5",
+    name: "H-COMP-5: Communication about Medicines",
+    favorableTrend: "Higher",
+    overallPerformance: "Same",
+    averageConway: 74.33333333333333,
+    averageNational: 74.25666666666667,
+    trendSlope: 0.28554249396091713
+  },
+  "H-COMP-6": {
+    id: "H-COMP-6",
+    name: "H-COMP-6: Discharge Information",
+    favorableTrend: "Higher",
+    overallPerformance: "Worse",
+    averageConway: 85,
+    averageNational: 85.10666666666667,
+    trendSlope: -0.2282050616823219
+  },
+  "Hand Hygiene": {
+    id: "Hand Hygiene",
+    name: "Hand Hygiene",
+    favorableTrend: "Higher",
+    overallPerformance: "Better",
+    averageConway: 95,
+    averageNational: 75.20833333333333,
+    trendSlope: 4.281576499279131
   },
   "IPS": {
     id: "IPS",
     name: "ICU Physician Staffing (IPS)",
     favorableTrend: "Higher",
     overallPerformance: "Better",
-    averageConway: 62,
-    averageNational: 64.53,
-    trendSlope: 28.46
+    averageConway: 68.33333333333333,
+    averageNational: 65.08833333333332,
+    trendSlope: 21.689366624006546
   },
   "SP-1": {
     id: "SP-1",
     name: "Safe Practice 1: Culture of Leadership Structures and Systems",
     favorableTrend: "Higher",
     overallPerformance: "Better",
-    averageConway: 118.15,
-    averageNational: 117.37,
-    trendSlope: 1.84
+    averageConway: 118.46166666666666,
+    averageNational: 117.40500000000002,
+    trendSlope: 1.3172983696115466
   },
   "SP-2": {
     id: "SP-2",
     name: "Safe Practice 2: Culture Measurement, Feedback and Intervention",
     favorableTrend: "Higher",
     overallPerformance: "Better",
-    averageConway: 112,
-    averageNational: 116.68,
-    trendSlope: 5.99
+    averageConway: 113.33333333333333,
+    averageNational: 116.77666666666666,
+    trendSlope: 4.566182447159273
   },
   "Total Nursing Care Hours per Patient Day": {
     id: "Total Nursing Care Hours per Patient Day",
@@ -67,154 +122,100 @@ export const performanceConfig: Record<string, MeasurePerformanceConfig> = {
     favorableTrend: "Higher",
     overallPerformance: "Better",
     averageConway: 100,
-    averageNational: 74.72,
+    averageNational: 75.59,
     trendSlope: 0
-  },
-  "Hand Hygiene": {
-    id: "Hand Hygiene",
-    name: "Hand Hygiene",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 94,
-    averageNational: 74.89,
-    trendSlope: 5.99
-  },
-  "H-COMP-1": {
-    id: "H-COMP-1",
-    name: "H-COMP-1: Nurse Communication",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 90.2,
-    averageNational: 89.85,
-    trendSlope: 0.40
-  },
-  "H-COMP-2": {
-    id: "H-COMP-2",
-    name: "H-COMP-2: Doctor Communication",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 90.8,
-    averageNational: 89.68,
-    trendSlope: 0
-  },
-  "H-COMP-3": {
-    id: "H-COMP-3",
-    name: "H-COMP-3: Staff Responsiveness",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 81.6,
-    averageNational: 81.30,
-    trendSlope: 0.20
-  },
-  "H-COMP-5": {
-    id: "H-COMP-5",
-    name: "H-COMP-5: Communication about Medicines",
-    favorableTrend: "Higher",
-    overallPerformance: "Better",
-    averageConway: 74.2,
-    averageNational: 74.18,
-    trendSlope: 0.30
-  },
-  "H-COMP-6": {
-    id: "H-COMP-6",
-    name: "H-COMP-6: Discharge Information",
-    favorableTrend: "Higher",
-    overallPerformance: "Same",
-    averageConway: 85.2,
-    averageNational: 85.03,
-    trendSlope: -0.10
   },
 
   // Outcome Measures (all have "Lower" favorable trend)
-  "Foreign Object Retained After Surgery": {
-    id: "Foreign Object Retained After Surgery",
-    name: "Foreign Object Retained After Surgery",
-    favorableTrend: "Lower",
-    overallPerformance: "Better",
-    averageConway: 0,
-    averageNational: 0.014,
-    trendSlope: 0
-  },
   "Air Embolism": {
     id: "Air Embolism",
     name: "Air Embolism",
     favorableTrend: "Lower",
     overallPerformance: "Better",
     averageConway: 0,
-    averageNational: 0.0014,
+    averageNational: 0.0013333333333333333,
     trendSlope: 0
+  },
+  "C. diff": {
+    id: "C. diff",
+    name: "C. diff (Clostridioides difficile Infection)",
+    favorableTrend: "Lower",
+    overallPerformance: "Better",
+    averageConway: 0.26233333333333336,
+    averageNational: 0.43683333333333335,
+    trendSlope: 0.024143117355638632
+  },
+  "CAUTI": {
+    id: "CAUTI",
+    name: "CAUTI (Catheter-Associated Urinary Tract Infection)",
+    favorableTrend: "Lower",
+    overallPerformance: "Better",
+    averageConway: 0.244,
+    averageNational: 0.6438333333333334,
+    trendSlope: 0.09431456088248015
+  },
+  "CLABSI": {
+    id: "CLABSI",
+    name: "CLABSI (Central Line-Associated Bloodstream Infection)",
+    favorableTrend: "Lower",
+    overallPerformance: "Better",
+    averageConway: 0.7441666666666666,
+    averageNational: 0.7698333333333333,
+    trendSlope: -0.041719433744567824
   },
   "Falls and Trauma": {
     id: "Falls and Trauma",
     name: "Falls and Trauma",
     favorableTrend: "Lower",
+    overallPerformance: "Worse",
+    averageConway: 0.07716666666666668,
+    averageNational: 0.4001666666666667,
+    trendSlope: 0.06603081721271914
+  },
+  "Foreign Object Retained After Surgery": {
+    id: "Foreign Object Retained After Surgery",
+    name: "Foreign Object Retained After Surgery",
+    favorableTrend: "Lower",
     overallPerformance: "Better",
     averageConway: 0,
-    averageNational: 0.413,
+    averageNational: 0.013666666666666666,
     trendSlope: 0
-  },
-  "CLABSI": {
-    id: "CLABSI",
-    name: "CLABSI",
-    favorableTrend: "Lower",
-    overallPerformance: "Better",
-    averageConway: 0.777,
-    averageNational: 0.807,
-    trendSlope: -0.0235
-  },
-  "CAUTI": {
-    id: "CAUTI",
-    name: "CAUTI",
-    favorableTrend: "Lower",
-    overallPerformance: "Better",
-    averageConway: 0.213,
-    averageNational: 0.668,
-    trendSlope: 0.118
-  },
-  "SSI: Colon": {
-    id: "SSI: Colon",
-    name: "SSI: Colon",
-    favorableTrend: "Lower",
-    overallPerformance: "Better",
-    averageConway: 0.491,
-    averageNational: 0.836,
-    trendSlope: 0.162
   },
   "MRSA": {
     id: "MRSA",
-    name: "MRSA",
+    name: "MRSA (Methicillin-resistant Staphylococcus aureus)",
     favorableTrend: "Lower",
     overallPerformance: "Worse",
-    averageConway: 1.347,
-    averageNational: 0.856,
-    trendSlope: -0.096
-  },
-  "C. diff": {
-    id: "C. diff",
-    name: "C. diff",
-    favorableTrend: "Lower",
-    overallPerformance: "Better",
-    averageConway: 0.263,
-    averageNational: 0.450,
-    trendSlope: 0.044
+    averageConway: 1.1975,
+    averageNational: 0.8281666666666667,
+    trendSlope: -0.18310584125358623
   },
   "PSI 4": {
     id: "PSI 4",
     name: "PSI 4: Death rate among surgical inpatients with serious treatable conditions",
     favorableTrend: "Lower",
     overallPerformance: "Worse",
-    averageConway: 193.43,
-    averageNational: 160.13,
-    trendSlope: 10.58
+    averageConway: 196.95999999999998,
+    averageNational: 172.91000000000003,
+    trendSlope: 8.46271308948259
   },
   "PSI-90": {
     id: "PSI-90",
-    name: "CMS Medicare PSI-90: Patient safety and adverse events composite",
+    name: "PSI-90: CMS Medicare PSI-90: Patient safety and adverse events composite",
     favorableTrend: "Lower",
     overallPerformance: "Worse",
-    averageConway: 1.304,
-    averageNational: 0.996,
-    trendSlope: -0.009
+    averageConway: 1.2966666666666666,
+    averageNational: 0.9966666666666666,
+    trendSlope: -0.011402968836821183
+  },
+  "SSI: Colon": {
+    id: "SSI: Colon",
+    name: "SSI: Colon (Surgical Site Infection: Colon)",
+    favorableTrend: "Lower",
+    overallPerformance: "Better",
+    averageConway: 0.5343333333333333,
+    averageNational: 0.8396666666666666,
+    trendSlope: 0.12934846042943135
   }
 }
 

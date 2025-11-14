@@ -1,0 +1,32 @@
+{
+  "fall_2025_categorizations": {
+    "Computerized Physician Order Entry (CPOE)": "Better",
+    "Barcode Medication Administration (BCMA)": "Better",
+    "ICU Physician Staffing (IPS)": "Better",
+    "Safe Practice 1: Culture of Leadership Structures and Systems": "Better",
+    "Safe Practice 2: Culture Measurement, Feedback and Intervention": "Better",
+    "Total Nursing Care Hours per Patient Day": "Better",
+    "Hand Hygiene": "Better",
+    "H-COMP-1: Nurse Communication": "Better",
+    "H-COMP-2: Doctor Communication": "Better",
+    "H-COMP-3: Staff Responsiveness": "Same",
+    "H-COMP-5: Communication about Medicines": "Same",
+    "H-COMP-6: Discharge Information": "Worse",
+    "Foreign Object Retained After Surgery": "Better",
+    "Air Embolism": "Better",
+    "Falls and Trauma": "Worse",
+    "CLABSI (Central Line-Associated Bloodstream Infection)": "Better",
+    "CAUTI (Catheter-Associated Urinary Tract Infection)": "Better",
+    "SSI: Colon (Surgical Site Infection: Colon)": "Better",
+    "MRSA (Methicillin-resistant Staphylococcus aureus)": "Worse",
+    "C. diff (Clostridioides difficile Infection)": "Better",
+    "PSI 4: Death rate among surgical inpatients with serious treatable conditions": "Worse",
+    "PSI-90: CMS Medicare PSI-90: Patient safety and adverse events composite": "Worse"
+  },
+  "summary": {
+    "total": 22,
+    "better": 15,
+    "same": 2,
+    "worse": 5
+  }
+}
