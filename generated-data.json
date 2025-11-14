@@ -28,23 +28,28 @@
         "conwayResult": 100,
         "conwayZScore": 0.579,
         "nationalMean": 80.23
+      },
+      "2025 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0,
+        "nationalMean": 82.22
       }
     },
     "summary": {
-      "conwayMean": 94,
-      "nationalMean": 85.686,
-      "conwaySlope": 5.993422887561243,
-      "nationalSlope": -3.956840969024305,
+      "conwayMean": 95,
+      "nationalMean": 85.10833333333333,
+      "conwaySlope": 4.281576499279131,
+      "nationalSlope": -2.7560641643827957,
       "weight": 0.062
     },
     "forecasts": {
       "2026": {
         "conwayResult": 100,
-        "nationalMean": 69.85429985982717
+        "nationalMean": 72.69723525609902
       },
       "2027": {
         "conwayResult": 100,
-        "nationalMean": 61.94061792177865
+        "nationalMean": 67.18510692733344
       }
     }
   },
@@ -77,23 +82,28 @@
         "conwayResult": 100,
         "conwayZScore": 0.596,
         "nationalMean": 81.87
+      },
+      "2025 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0,
+        "nationalMean": 85.2
       }
     },
     "summary": {
-      "conwayMean": 95,
-      "nationalMean": 87.938,
-      "conwaySlope": 4.9945190729677025,
-      "nationalSlope": -3.080988559930187,
+      "conwayMean": 95.83333333333333,
+      "nationalMean": 87.48166666666667,
+      "conwaySlope": 3.567980416065942,
+      "nationalSlope": -2.1515965117150935,
       "weight": 0.06
     },
     "forecasts": {
       "2026": {
         "conwayResult": 100,
-        "nationalMean": 75.61066933446023
+        "nationalMean": 77.79260511482448
       },
       "2027": {
         "conwayResult": 100,
-        "nationalMean": 69.44869221459987
+        "nationalMean": 73.48941209139434
       }
     }
   },
@@ -126,23 +136,28 @@
         "conwayResult": 100,
         "conwayZScore": 0.797,
         "nationalMean": 65.15
+      },
+      "2025 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0,
+        "nationalMean": 67.86
       }
     },
     "summary": {
-      "conwayMean": 62,
-      "nationalMean": 64.53399999999999,
-      "conwaySlope": 28.463570314473234,
-      "nationalSlope": -0.2501989174009469,
+      "conwayMean": 68.33333333333333,
+      "nationalMean": 65.08833333333332,
+      "conwaySlope": 21.689366624006546,
+      "nationalSlope": 0.3313224272993637,
       "weight": 0.069
     },
     "forecasts": {
       "2026": {
         "conwayResult": 100,
-        "nationalMean": 63.532930139801806
+        "nationalMean": 66.58034327763758
       },
       "2027": {
         "conwayResult": 100,
-        "nationalMean": 63.03253230499991
+        "nationalMean": 67.24298813223632
       }
     }
   },
@@ -175,23 +190,28 @@
         "conwayResult": 120,
         "conwayZScore": 0.37,
         "nationalMean": 117.49
+      },
+      "2025 Fall": {
+        "conwayResult": 120,
+        "conwayZScore": 0,
+        "nationalMean": 117.6
       }
     },
     "summary": {
-      "conwayMean": 118.154,
-      "nationalMean": 117.36600000000001,
-      "conwaySlope": 1.8439764417396765,
-      "nationalSlope": 0.11686792327480246,
+      "conwayMean": 118.46166666666666,
+      "nationalMean": 117.40500000000002,
+      "conwaySlope": 1.3172983696115466,
+      "nationalSlope": 0.10017452970989242,
       "weight": 0.031
     },
     "forecasts": {
       "2026": {
         "conwayResult": 120,
-        "nationalMean": 117.83359976753569
+        "nationalMean": 117.85610557625525
       },
       "2027": {
         "conwayResult": 120,
-        "nationalMean": 118.0673356140853
+        "nationalMean": 118.05645463567502
       }
     }
   },
@@ -224,23 +244,28 @@
         "conwayResult": 120,
         "conwayZScore": 0.225,
         "nationalMean": 116.85
+      },
+      "2025 Fall": {
+        "conwayResult": 120,
+        "conwayZScore": 0,
+        "nationalMean": 117.27
       }
     },
     "summary": {
-      "conwayMean": 112,
-      "nationalMean": 116.678,
-      "conwaySlope": 5.992330592520681,
-      "nationalSlope": 0.15681970667837955,
+      "conwayMean": 113.33333333333333,
+      "nationalMean": 116.77666666666666,
+      "conwaySlope": 4.566182447159273,
+      "nationalSlope": 0.1740674951797086,
       "weight": 0.032
     },
     "forecasts": {
       "2026": {
         "conwayResult": 120,
-        "nationalMean": 117.30545068392632
+        "nationalMean": 117.56052677509692
       },
       "2027": {
         "conwayResult": 120,
-        "nationalMean": 117.61909009728308
+        "nationalMean": 117.90866176545634
       }
     }
   },
@@ -273,23 +298,28 @@
         "conwayResult": 100,
         "conwayZScore": 0.726,
         "nationalMean": 77.07
+      },
+      "2025 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0,
+        "nationalMean": 79.09
       }
     },
     "summary": {
       "conwayMean": 100,
-      "nationalMean": 74.715,
+      "nationalMean": 75.59,
       "conwaySlope": 0,
-      "nationalSlope": 1.9604916662547327,
+      "nationalSlope": 1.8542880741728711,
       "weight": 0.047
     },
     "forecasts": {
       "2026": {
         "conwayResult": 100,
-        "nationalMean": 81.57672083189158
+        "nationalMean": 83.01121648973077
       },
       "2027": {
         "conwayResult": 100,
-        "nationalMean": 85.49770416440106
+        "nationalMean": 86.71979263807651
       }
     }
   },
@@ -322,23 +352,28 @@
         "conwayResult": 100,
         "conwayZScore": 0.708,
         "nationalMean": 74.4
+      },
+      "2025 Fall": {
+        "conwayResult": 100,
+        "conwayZScore": 0,
+        "nationalMean": 76.81
       }
     },
     "summary": {
-      "conwayMean": 94,
-      "nationalMean": 74.88799999999999,
-      "conwaySlope": 5.993422887561243,
-      "nationalSlope": 0.0632318676030701,
+      "conwayMean": 95,
+      "nationalMean": 75.20833333333333,
+      "conwaySlope": 4.281576499279131,
+      "nationalSlope": 0.3102501404819135,
       "weight": 0.049
     },
     "forecasts": {
       "2026": {
         "conwayResult": 100,
-        "nationalMean": 75.14099676560964
+        "nationalMean": 76.60545063261763
       },
       "2027": {
         "conwayResult": 100,
-        "nationalMean": 75.26746050081579
+        "nationalMean": 77.22595091358146
       }
     }
   },
@@ -371,23 +406,28 @@
         "conwayResult": 91,
         "conwayZScore": 0.322,
         "nationalMean": 90.19
+      },
+      "2025 Fall": {
+        "conwayResult": 91,
+        "conwayZScore": 0,
+        "nationalMean": 90.37
       }
     },
     "summary": {
-      "conwayMean": 90.2,
-      "nationalMean": 89.852,
-      "conwaySlope": 0.3993430668293039,
-      "nationalSlope": 0.12474664740237273,
+      "conwayMean": 90.33333333333333,
+      "nationalMean": 89.93833333333335,
+      "conwaySlope": 0.3423596228613037,
+      "nationalSlope": 0.14518077192494339,
       "weight": 0.03
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 91.79780990355484,
-        "nationalMean": 90.35112329826418
+        "conwayResult": 91.8750459363736,
+        "nationalMean": 90.59211085512503
       },
       "2027": {
-        "conwayResult": 92.59649603721344,
-        "nationalMean": 90.60061659306893
+        "conwayResult": 92.5597651820962,
+        "nationalMean": 90.88247239897493
       }
     }
   },
@@ -420,23 +460,28 @@
         "conwayResult": 90,
         "conwayZScore": 0.036,
         "nationalMean": 89.91
+      },
+      "2025 Fall": {
+        "conwayResult": 92,
+        "conwayZScore": 0,
+        "nationalMean": 89.99
       }
     },
     "summary": {
-      "conwayMean": 90.8,
-      "nationalMean": 89.676,
-      "conwaySlope": 0.0004369180162246275,
-      "nationalSlope": 0.07682984856301672,
+      "conwayMean": 91,
+      "nationalMean": 89.72833333333334,
+      "conwaySlope": 0.17138793278193531,
+      "nationalSlope": 0.08869767779336467,
       "weight": 0.03
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 90.80174815087916,
-        "nationalMean": 89.98340359134639
+        "conwayResult": 91.77179351282896,
+        "nationalMean": 90.12775639196263
       },
       "2027": {
-        "conwayResult": 90.80262198691162,
-        "nationalMean": 90.1370632884724
+        "conwayResult": 92.11456937839284,
+        "nationalMean": 90.30515174754937
       }
     }
   },
@@ -469,23 +514,28 @@
         "conwayResult": 82,
         "conwayZScore": 0.086,
         "nationalMean": 81.63
+      },
+      "2025 Fall": {
+        "conwayResult": 81,
+        "conwayZScore": 0,
+        "nationalMean": 81.81
       }
     },
     "summary": {
-      "conwayMean": 81.6,
-      "nationalMean": 81.304,
-      "conwaySlope": 0.19967153341465196,
-      "nationalSlope": 0.11675760147570573,
+      "conwayMean": 81.5,
+      "nationalMean": 81.38833333333334,
+      "conwaySlope": 0.028564655463655886,
+      "nationalSlope": 0.13890279136347766,
       "weight": 0.03
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 82.39890495177741,
-        "nationalMean": 81.77115835943869
+        "conwayResult": 81.62863225213816,
+        "nationalMean": 82.0138398759939
       },
       "2027": {
-        "conwayResult": 82.79824801860671,
-        "nationalMean": 82.0046735623901
+        "conwayResult": 81.68576156306548,
+        "nationalMean": 82.29164545872085
       }
     }
   },
@@ -518,23 +568,28 @@
         "conwayResult": 74,
         "conwayZScore": -0.103,
         "nationalMean": 74.42
+      },
+      "2025 Fall": {
+        "conwayResult": 75,
+        "conwayZScore": 0,
+        "nationalMean": 74.64
       }
     },
     "summary": {
-      "conwayMean": 74.2,
-      "nationalMean": 74.18,
-      "conwaySlope": 0.29994421813820255,
-      "nationalSlope": 0.08981942118537851,
+      "conwayMean": 74.33333333333333,
+      "nationalMean": 74.25666666666667,
+      "conwaySlope": 0.28554249396091713,
+      "nationalSlope": 0.11694442789293816,
       "weight": 0.031
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 75.4001055785453,
-        "nationalMean": 74.53937611698392
+        "conwayResult": 75.61918724906053,
+        "nationalMean": 74.7832903871599
       },
       "2027": {
-        "conwayResult": 75.9999940148217,
-        "nationalMean": 74.71901495935467
+        "conwayResult": 76.19027223698237,
+        "nationalMean": 75.01717924294579
       }
     }
   },
@@ -567,23 +622,28 @@
         "conwayResult": 85,
         "conwayZScore": -0.068,
         "nationalMean": 85.25
+      },
+      "2025 Fall": {
+        "conwayResult": 84,
+        "conwayZScore": 0,
+        "nationalMean": 85.48
       }
     },
     "summary": {
-      "conwayMean": 85.2,
-      "nationalMean": 85.03200000000001,
-      "conwaySlope": -0.09983576670732598,
-      "nationalSlope": 0.06984243718854798,
+      "conwayMean": 85,
+      "nationalMean": 85.10666666666667,
+      "conwaySlope": -0.2282050616823219,
+      "nationalSlope": 0.10381405184046437,
       "weight": 0.03
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 84.8005475241113,
-        "nationalMean": 85.31144628841139
+        "conwayResult": 83.97234779985794,
+        "nationalMean": 85.57416172568524
       },
       "2027": {
-        "conwayResult": 84.60087599069664,
-        "nationalMean": 85.45113116278849
+        "conwayResult": 83.51593767649331,
+        "nationalMean": 85.78178982936618
       }
     }
   },
@@ -616,23 +676,28 @@
         "conwayResult": 0,
         "conwayZScore": 0.275,
         "nationalMean": 0.014
+      },
+      "2025 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0,
+        "nationalMean": 0.011
       }
     },
     "summary": {
       "conwayMean": 0,
-      "nationalMean": 0.014199999999999999,
+      "nationalMean": 0.013666666666666666,
       "conwaySlope": 0,
-      "nationalSlope": -0.0001997807629187079,
+      "nationalSlope": -0.0005705646845436256,
       "weight": 0.042
     },
     "forecasts": {
       "2026": {
         "conwayResult": 0,
-        "nationalMean": 0.013400658010502796
+        "nationalMean": 0.011097301863484371
       },
       "2027": {
         "conwayResult": 0,
-        "nationalMean": 0.013001096484665381
+        "nationalMean": 0.00995617249439712
       }
     }
   },
@@ -665,23 +730,28 @@
         "conwayResult": 0,
         "conwayZScore": 0.035,
         "nationalMean": 0.002
+      },
+      "2025 Fall": {
+        "conwayResult": 0,
+        "conwayZScore": 0,
+        "nationalMean": 0.001
       }
     },
     "summary": {
       "conwayMean": 0,
-      "nationalMean": 0.0014,
+      "nationalMean": 0.0013333333333333333,
       "conwaySlope": 0,
-      "nationalSlope": 0.0002995073001219779,
+      "nationalSlope": 0.00011415456117898179,
       "weight": 0.024
     },
     "forecasts": {
       "2026": {
         "conwayResult": 0,
-        "nationalMean": 0.0025983574276661203
+        "nationalMean": 0.0018473937362315646
       },
       "2027": {
         "conwayResult": 0,
-        "nationalMean": 0.003197372027910081
+        "nationalMean": 0.002075702858589528
       }
     }
   },
@@ -714,23 +784,28 @@
         "conwayResult": 0,
         "conwayZScore": 0.955,
         "nationalMean": 0.384
+      },
+      "2025 Fall": {
+        "conwayResult": 0.463,
+        "conwayZScore": 0,
+        "nationalMean": 0.338
       }
     },
     "summary": {
-      "conwayMean": 0,
-      "nationalMean": 0.4126,
-      "conwaySlope": 0,
-      "nationalSlope": -0.014976129612627285,
+      "conwayMean": 0.07716666666666668,
+      "nationalMean": 0.4001666666666667,
+      "conwaySlope": 0.06603081721271914,
+      "nationalSlope": -0.019199558868264598,
       "weight": 0.049
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 0,
-        "nationalMean": 0.3526790693526549
+        "conwayResult": 0.3745164015305207,
+        "nationalMean": 0.3137072833064716
       },
       "2027": {
-        "conwayResult": 0,
-        "nationalMean": 0.32272681012740057
+        "conwayResult": 0.5065780359559611,
+        "nationalMean": 0.27530816556994253
       }
     }
   },
@@ -763,23 +838,28 @@
         "conwayResult": 0.5,
         "conwayZScore": 0.273,
         "nationalMean": 0.651
+      },
+      "2025 Fall": {
+        "conwayResult": 0.579,
+        "conwayZScore": 0,
+        "nationalMean": 0.586
       }
     },
     "summary": {
-      "conwayMean": 0.7772,
-      "nationalMean": 0.8065999999999999,
-      "conwaySlope": -0.023535572009475716,
-      "nationalSlope": -0.10515710045642968,
+      "conwayMean": 0.7441666666666666,
+      "nationalMean": 0.7698333333333333,
+      "conwaySlope": -0.041719433744567824,
+      "nationalSlope": -0.09156949228938904,
       "weight": 0.045
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 0.6830319195544154,
-        "nationalMean": 0.38585635751624636
+        "conwayResult": 0.5562958650278862,
+        "nationalMean": 0.35747793015618257
       },
       "2027": {
-        "conwayResult": 0.6359607755354642,
-        "nationalMean": 0.17554215660338812
+        "conwayResult": 0.47285699753875043,
+        "nationalMean": 0.1743389455774036
       }
     }
   },
@@ -812,23 +892,28 @@
         "conwayResult": 0.29,
         "conwayZScore": 0.506,
         "nationalMean": 0.54
+      },
+      "2025 Fall": {
+        "conwayResult": 0.4,
+        "conwayZScore": 0,
+        "nationalMean": 0.522
       }
     },
     "summary": {
-      "conwayMean": 0.21280000000000002,
-      "nationalMean": 0.6682,
-      "conwaySlope": 0.11829271292571075,
-      "nationalSlope": -0.08008587084942846,
+      "conwayMean": 0.244,
+      "nationalMean": 0.6438333333333334,
+      "conwaySlope": 0.09431456088248015,
+      "nationalSlope": -0.06662802143022703,
       "weight": 0.047
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 0.6861004875526255,
-        "nationalMean": 0.34776875126436835
+        "conwayResult": 0.6687169860379107,
+        "nationalMean": 0.34379427061876555
       },
       "2027": {
-        "conwayResult": 0.9226859134040453,
-        "nationalMean": 0.18759700956551129
+        "conwayResult": 0.8573461078028686,
+        "nationalMean": 0.2105382277583132
       }
     }
   },
@@ -861,23 +946,28 @@
         "conwayResult": 0.843,
         "conwayZScore": -0.017,
         "nationalMean": 0.831
+      },
+      "2025 Fall": {
+        "conwayResult": 0.75,
+        "conwayZScore": 0,
+        "nationalMean": 0.856
       }
     },
     "summary": {
-      "conwayMean": 0.49119999999999997,
-      "nationalMean": 0.8363999999999999,
-      "conwaySlope": 0.16171875916480424,
-      "nationalSlope": 0.0038008590526420398,
+      "conwayMean": 0.5343333333333333,
+      "nationalMean": 0.8396666666666666,
+      "conwaySlope": 0.12934846042943135,
+      "nationalSlope": 0.004967856655136368,
       "weight": 0.034
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 1.1382522626966605,
-        "nationalMean": 0.8516076015355573
+        "conwayResult": 1.116814847833357,
+        "nationalMean": 0.8620379006086551
       },
       "2027": {
-        "conwayResult": 1.4616897810262657,
-        "nationalMean": 0.8592093196408412
+        "conwayResult": 1.375511768692217,
+        "nationalMean": 0.8719736139189278
       }
     }
   },
@@ -910,23 +1000,28 @@
         "conwayResult": 0.96,
         "conwayZScore": -0.407,
         "nationalMean": 0.719
+      },
+      "2025 Fall": {
+        "conwayResult": 0.449,
+        "conwayZScore": 0,
+        "nationalMean": 0.689
       }
     },
     "summary": {
-      "conwayMean": 1.3472,
-      "nationalMean": 0.8560000000000001,
-      "conwaySlope": -0.09623545302413106,
-      "nationalSlope": -0.09317385925494107,
+      "conwayMean": 1.1975,
+      "nationalMean": 0.8281666666666667,
+      "conwaySlope": -0.18310584125358623,
+      "nationalSlope": -0.07707560920398147,
       "weight": 0.045
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 0.9621527243933166,
-        "nationalMean": 0.4832024546413294
+        "conwayResult": 0.3729384445466266,
+        "nationalMean": 0.48108006485403365
       },
       "2027": {
-        "conwayResult": 0.7696818183450524,
-        "nationalMean": 0.2968547361314471
+        "conwayResult": 0.006726762039455991,
+        "nationalMean": 0.32692884644606934
       }
     }
   },
@@ -959,23 +1054,28 @@
         "conwayResult": 0.339,
         "conwayZScore": 0.189,
         "nationalMean": 0.401
+      },
+      "2025 Fall": {
+        "conwayResult": 0.258,
+        "conwayZScore": 0,
+        "nationalMean": 0.37
       }
     },
     "summary": {
-      "conwayMean": 0.2632,
-      "nationalMean": 0.4502,
-      "conwaySlope": 0.04353462036612533,
-      "nationalSlope": -0.02455959861000218,
+      "conwayMean": 0.26233333333333336,
+      "nationalMean": 0.43683333333333335,
+      "conwaySlope": 0.024143117355638632,
+      "nationalSlope": -0.02547618664094705,
       "weight": 0.045
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 0.43738619063750406,
-        "nationalMean": 0.35193469093137786
+        "conwayResult": 0.3710545312152096,
+        "nationalMean": 0.32210906271551565
       },
       "2027": {
-        "conwayResult": 0.5244554313697556,
-        "nationalMean": 0.30281549371137295
+        "conwayResult": 0.4193407659264867,
+        "nationalMean": 0.2711566894336217
       }
     }
   },
@@ -1008,23 +1108,28 @@
         "conwayResult": 207.55,
         "conwayZScore": -1.253,
         "nationalMean": 177.45
+      },
+      "2025 Fall": {
+        "conwayResult": 207.55,
+        "conwayZScore": 0,
+        "nationalMean": 177.47
       }
     },
     "summary": {
-      "conwayMean": 193.42999999999998,
-      "nationalMean": 160.13000000000002,
-      "conwaySlope": 10.580302294858841,
-      "nationalSlope": 9.338396220599305,
+      "conwayMean": 196.95999999999998,
+      "nationalMean": 172.91000000000003,
+      "conwaySlope": 8.46271308948259,
+      "nationalSlope": 7.810844262792838,
       "weight": 0.02
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 225.16124450805182,
-        "nationalMean": 197.49381874126902
+        "conwayResult": 226.59108857084584,
+        "nationalMean": 198.19376535144443
       },
       "2027": {
-        "conwayResult": 246.32184909776925,
-        "nationalMean": 216.17061118246738
+        "conwayResult": 243.516514749811,
+        "nationalMean": 213.81545387703
       }
     }
   },
@@ -1057,23 +1162,28 @@
         "conwayResult": 1.26,
         "conwayZScore": -1.316,
         "nationalMean": 1
+      },
+      "2025 Fall": {
+        "conwayResult": 1.26,
+        "conwayZScore": 0,
+        "nationalMean": 1
       }
     },
     "summary": {
-      "conwayMean": 1.304,
-      "nationalMean": 0.9959999999999999,
-      "conwaySlope": -0.008971019168132047,
-      "nationalSlope": 0.006993965144715631,
+      "conwayMean": 1.2966666666666666,
+      "nationalMean": 0.9966666666666666,
+      "conwaySlope": -0.011402968836821183,
+      "nationalSlope": 0.004568263660672112,
       "weight": 0.15
     },
     "forecasts": {
       "2026": {
-        "conwayResult": 1.2681060920735887,
-        "nationalMean": 1.023983525198199
+        "conwayResult": 1.2453168590553743,
+        "nationalMean": 1.0172384548956843
       },
       "2027": {
-        "conwayResult": 1.2501640537373246,
-        "nationalMean": 1.03797145548763
+        "conwayResult": 1.222510921381732,
+        "nationalMean": 1.0263749822170285
       }
     }
   }
