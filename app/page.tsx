@@ -675,7 +675,7 @@ export default function ProfessionalDashboard() {
                         <div className="w-6 h-0.5" style={{ backgroundColor: "#0066CC" }}></div>
                         <div className="w-6 h-0.5 border-t-2 border-dashed" style={{ borderColor: "#0066CC" }}></div>
                       </div>
-                      <span className="text-sm text-gray-700 font-medium">Conway Regional</span>
+                      <span className="text-sm text-gray-700 font-medium">Conway Medical Center</span>
                       <span className="text-xs text-gray-500">
                         (Slope: {conwayTrend >= 0 ? "+" : ""}{conwayTrend.toFixed(3)})
                       </span>
